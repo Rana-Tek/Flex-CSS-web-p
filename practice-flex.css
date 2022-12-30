@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  word-spacing: 0.5rem;
+  color: #333;
+  background: #a1c3ff;
+}
+.container {
+  gap: 2rem;
+  padding-right: 40px;
+  padding-left: 40px;
+  background: #0a51cc;
+  color: #fff;
+  height: 60px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: lightblue;
+}
+.navbar-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+section i {
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+section i:hover {
+  cursor: pointer;
+}
+
+section::after {
+  content: "8";
+  background-color: red;
+  display: inline;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  transform: translate(-15px, 2px);
+}
+
+main {
+  background: #0a51cc;
+  color: #fff;
+  min-height: 450px;
+}
+main h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main img {
+  max-width: 400px;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 2000px) {
+  .main-container {
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer--links {
+  gap: 0.5rem;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--links a {
+  flex: 1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer--links a:hover {
+  color: lightblue;
+}
+
+.footer--about {
+  flex: 1;
+  gap: 0.5rem;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+.footer--contact {
+  flex: 1;
+  gap: 0.5rem;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+footer h3:hover {
+  cursor: pointer;
+}
